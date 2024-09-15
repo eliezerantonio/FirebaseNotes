@@ -15,9 +15,9 @@ import androidx.compose.ui.text.style.TextAlign
 fun Alert(
     title: String,
     message: String,
-    confirmText: String,
-    dismissText: String,
-    onConfirmClick: () -> Unit?,
+    confirmText: String?,
+    dismissText: String?,
+    onConfirmClick: () -> Unit,
     onDismissClick: () -> Unit
 ) {
 
@@ -34,12 +34,12 @@ fun Alert(
         },
         confirmButton = {
             Button(onClick = { onConfirmClick() }) {
-                Text(confirmText)
+                Text(confirmText!!)
             }
         },
         dismissButton = {
             Button(onClick = { onDismissClick() }) {
-                Text(dismissText)
+                Text(dismissText!!)
             }
         }
     )
