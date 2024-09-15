@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "644826981564",
+    "project_id": "fir-notes-d5cad",
+    "storage_bucket": "fir-notes-d5cad.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:644826981564:android:cde5cf156ab0b5555c1cb9",
+        "android_client_info": {
+          "package_name": "com.example.firebasenotes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABEY-mZhvwoPyUqgF2zANcm-GnZoxRKnE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
