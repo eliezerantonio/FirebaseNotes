@@ -16,7 +16,6 @@ fun Alert(
     title: String,
     message: String,
     confirmText: String?,
-    dismissText: String?,
     onConfirmClick: () -> Unit,
     onDismissClick: () -> Unit
 ) {
@@ -38,9 +37,8 @@ fun Alert(
             }
         },
         dismissButton = {
-            Button(onClick = { onDismissClick() }) {
-                Text(dismissText!!)
-            }
+            onDismissClick()
+
         }
     )
 

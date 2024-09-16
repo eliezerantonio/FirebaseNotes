@@ -91,7 +91,6 @@ fun RegisterView(navController: NavController, loginViewModel: LoginViewModel) {
                 title = "Alert",
                 message = "Register Failed",
                 confirmText = "Accept",
-                dismissText = "OK",
                 onConfirmClick = {},
                 onDismissClick = {
                     loginViewModel.dismissAlert()

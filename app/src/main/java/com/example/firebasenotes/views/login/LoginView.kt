@@ -78,7 +78,6 @@ fun LoginView(
                 title = "Alert",
                 message = "Invalid Credenctials",
                 confirmText = "Accept",
-                dismissText = "OK",
                 onConfirmClick = {},
                 onDismissClick = {
                     loginViewModel.dismissAlert()

@@ -8,6 +8,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Edit
 import androidx.compose.material3.Divider
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.Text
@@ -33,7 +34,6 @@ fun CardNote(title: String, note: String, date: String, onClick: () -> Unit) {
 
             showAlert = true
         }) {
-
         Row {
             Column {
                 Text(title, fontWeight = FontWeight.Bold)
@@ -42,17 +42,15 @@ fun CardNote(title: String, note: String, date: String, onClick: () -> Unit) {
             Spacer(modifier = Modifier.weight(1f))
 
             IconButton(onClick = { onClick() }) {
-
                 Icon(imageVector = Icons.Default.Edit, contentDescription = "")
             }
         }
-        Divider()
-
+        HorizontalDivider()
         if (showAlert) {
             Alert(
                 title = title,
                 message = note,
-                dismissText = "Cancelar",
+
                 confirmText = "Aceitar",
                 onConfirmClick = { showAlert = false }
             ) { }
