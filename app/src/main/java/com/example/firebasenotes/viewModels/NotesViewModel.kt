@@ -31,6 +31,16 @@ class NotesViewModel : ViewModel() {
         private set
 
 
+
+    fun onValue(value: String, text:String){
+        when(text ){
+            "title"->state = state.copy(title = value)
+            "note"-> state = state.copy(note = value)
+        }
+    }
+
+
+
     fun getNoteById(documentId: String) {
 
         firestore.collection("Notes").document(documentId).addSnapshotListener { snapshot, _ ->
